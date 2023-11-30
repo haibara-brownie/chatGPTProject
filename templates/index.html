@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyIndex</title>
+    <style>
+        .main{
+            position: relative;
+            width: 60%;
+            height: 1000px;
+            background-color: rgb(255, 196, 235);
+            margin: auto;
+        }
+
+        .login{
+            position: absolute;
+            width: 230px;
+            height: 130px;
+            background-color: aqua;
+            top: 300px;
+            left: 20px;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="login">
+            <form action="/login" method="get">
+                <p>账号<input name="uname" type="text"></p>
+                <p>密码<input name="pwd" type="password"></p>
+                <p><input type="submit"></p>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

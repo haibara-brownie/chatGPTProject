@@ -1,11 +1,18 @@
-from flask import Flask
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
 
+@app.route("/login", methods=["get"])
+def login():
+    uname = request.values.get("uname")
+    pwd = request.values.get("pwd")
+    return f"收到了参数{uname} {pwd}"
+
+
 @app.route("/")
 def x1():
-    return "hellow world"
+    return render_template("index.html")
 
 
 @app.route("/a")
